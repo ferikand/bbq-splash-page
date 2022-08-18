@@ -1,0 +1,172 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 375px;
+}
+
+header {
+  min-height: 358px;
+  width: 100%;
+  min-width: 50%;
+
+  background-image: url(images/dark-ribs.jpg);
+  text-align: center;
+
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p.undertitle {
+  display: inline-block;
+  box-sizing: border-box;
+
+  font: normal normal 400 0.625rem/0.8125em Source Sans Pro;
+  letter-spacing: 0.2em;
+  color: #f18119;
+  text-transform: uppercase;
+  border-top: 0.4375rem solid #f18119;
+  padding-top: 1em;
+  margin: 0;
+
+  margin-bottom: 0.5rem;
+}
+
+h1.title {
+  font: normal 300 2.25em Source Sans Pro;
+  line-height: 1.5rem;
+}
+
+h1.title span {
+  font: normal normal 900 2.25rem Source Sans Pro;
+
+  display: block;
+}
+
+p.subtitle {
+  font: normal normal 900 1.3125rem/1.6875rem Source Sans Pro;
+
+  color: #f18119;
+  text-transform: uppercase;
+
+  padding-bottom: 2rem;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2.title-2 {
+  font: normal normal 900 1.3125rem/1.6875rem Source Sans Pro;
+
+  margin-top: 1.6em;
+  margin-bottom: 0;
+
+  color: #404040;
+}
+
+p.subtitle-2 {
+  font: normal normal 900 1rem/1.25rem Source Sans Pro;
+
+  color: #f18119;
+  text-transform: uppercase;
+  /* letter-spacing: 0.3em; */
+
+  margin: 0;
+}
+
+p.main-text {
+  font: normal normal 300 16px/20px Source Sans Pro;
+
+  color: #5a5a5a;
+
+  margin: 1.5em 1.1875em 0.6em;
+  text-align: center;
+
+  letter-spacing: 0.009em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 68%;
+}
+
+form input {
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 2.3125rem;
+
+  border: 1px solid #818181;
+  border-radius: 7px;
+
+  margin-bottom: 1em;
+}
+
+form input:last-of-type {
+  margin-bottom: 0;
+}
+
+input::placeholder {
+  text-align: center;
+  font: normal normal 300 16px/20px Source Sans Pro;
+
+  color: #404040;
+  opacity: 0.5;
+}
+
+input[type="button"] {
+  text-transform: uppercase;
+  background: transparent linear-gradient(270deg, #ff713b 0%, #ffa51d 100%) 0%
+    0% no-repeat padding-box;
+  opacity: 1;
+  font: normal normal bold 10px/14px Segoe UI;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+p.no-sharing {
+  text-align: center;
+  font: normal normal normal 10px/13px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #989898;
+  display: inline-block;
+  max-width: 40%;
+}
+
+@media (min-width: 810px) {
+  .wrapper {
+    flex-direction: row;
+    width: 100%;
+    max-width: 960px;
+    border: 1px dotted red;
+    /*  */
+  }
+
+  header {
+    height: 810px;
+    width: 58.8%;
+    min-width: 565px;
+  }
+}

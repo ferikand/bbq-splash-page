@@ -22,6 +22,8 @@ header {
   min-width: 50%;
 
   background-image: url(images/dark-ribs.jpg);
+  background-size: cover;
+  background-position: center;
   text-align: center;
 
   color: #ffffff;
@@ -161,13 +163,17 @@ p.no-sharing {
     flex-direction: row;
     width: 100%;
     max-width: 960px;
-    border: 1px dotted red;
+    /* border: 1px dotted red; */
     /*  */
   }
 
   header {
     height: 810px;
-    width: 58.8%;
-    min-width: 565px;
+    min-width: 58.8%;
+    /* min-width: 565px; */
+  }
+
+  main {
+    max-width: 41.2%;
   }
 }
